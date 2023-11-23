@@ -10,13 +10,15 @@
     <title>Discretion</title>
 </head>
 <body>
-    <header>
-        <h1>Discretion</h1>
-        <em>Not everything needs to be public.</em>
-    </header>
-    <hr />
-    <main>
+    <div class="container">
+        <div class="design">
+            <div class="pill-1 rotate-45"></div>
+            <div class="pill-2 rotate-45"></div>
+            <div class="pill-3 rotate-45"></div>
+            <div class="pill-4 rotate-45"></div>
+        </div>
         <form id="register-form">
+            <h1>Register</h1>
             <fieldset>
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username">
@@ -25,9 +27,12 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
             </fieldset>
-            <input type="submit" value="Register">
+            <div class="login-btn"><input id="loginButton" type="submit" value="register"></div>
+            <div id="create">
+                <p id="ar">Already registered? <a href="./login.html">Log in here</a>.</p>
+                <i class="ri-arrow-right-fill"></i>
+            </div>
         </form>
-        <p>Already registered? <a href="./login.html">Log in here</a>.</p>
-    </main>
-</body>
+    </body>
+</div>
 </html>

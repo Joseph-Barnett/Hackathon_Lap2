@@ -11,12 +11,13 @@ function createPostElement (data) {
     content.textContent = data["content"];
     post.appendChild(content);
 
-    // const deleteDiv = document.createElement('div');
+    const deleteDiv = document.createElement('div');
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'delete';
-    deleteButton.classList.add('deleteButton');
-    post.appendChild(deleteButton);
-    // post.appendChild(deleteDiv);
+    deleteButton.id = 'loginButton';
+    deleteDiv.classList.add('board-btn');
+    post.appendChild(deleteDiv);
+    deleteDiv.appendChild(deleteButton);
 
     deleteButton.addEventListener('click', async (e) => {
         try {
@@ -104,7 +105,7 @@ document.getElementById('logout').addEventListener('click', async () => {
   
     if (response.status === 200) {
       localStorage.removeItem('token');
-      window.location.assign('./index.html');
+      window.location.assign('./login.html');
     } else {
       alert(data.error);
     }

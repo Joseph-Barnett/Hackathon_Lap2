@@ -11,12 +11,13 @@ function createPostElement (data) {
     content.textContent = data["content"];
     post.appendChild(content);
 
-    // const deleteDiv = document.createElement('div');
+    const deleteDiv = document.createElement('div');
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'delete';
-    deleteButton.classList.add('deleteButton');
-    post.appendChild(deleteButton);
-    // post.appendChild(deleteDiv);
+    deleteButton.id = 'loginButton';
+    deleteDiv.classList.add('board-btn');
+    post.appendChild(deleteDiv);
+    deleteDiv.appendChild(deleteButton);
 
     deleteButton.addEventListener('click', async (e) => {
         try {

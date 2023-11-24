@@ -7,32 +7,25 @@
     <link rel="shortcut icon" href="./assets/favicon.ico">
     <link rel="stylesheet" href="./assets/default.css">
     <script src="./assets/board.js" defer></script>
-    <title>Discretion</title>
+    <title>My Diary</title>
 </head>
 <body>
-    <nav>
-        <button id="logout">Log out</button>
-    </nav>
-    <header>
-        <h1>Discretion</h1>
-        <em>Not everything needs to be public.</em>
-    </header>
-    <hr />
-    <main>
-        <div class="container" id="posts">
-        </div>
-        <hr />
+    <div class="container1" id="posts">
         <form id="post-form">
+            <h1>My Diary Entries</h1>
             <fieldset>
-                <label for="title">Title:</label>
+                <label for="title">Diary Entry Title:</label>
                 <input type="text" id="title" name="title" required>
             </fieldset>
             <fieldset>
-                <label for="title">Content:</label>
+                <label for="title">Diary Entry Content:</label>
                 <textarea id="content" name="content" required></textarea>
             </fieldset>
-            <input type="submit" value="Post">
+            <div class="board-btn"><input id="loginButton" type="submit" value="Post"></div>
         </form>
-    </main>
+    </div>
+    <header>
+        <button id="logout">Log out</button>
+    </header>
 </body>
 </html>

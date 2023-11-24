@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/default.css">
     <script src="./assets/login.js" defer></script>
-    <title>Discretion</title>
+    <title>Login Page</title>
 </head>
+
 <body>
-    <header>
-        <h1>Discretion</h1>
-        <em>Not everything needs to be public.</em>
-    </header>
-    <hr />
-    <main>
-        <form id="login-form">
-            <fieldset>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-            </fieldset>
-            <fieldset>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-            </fieldset>
-            <input type="submit" value="Log in">
-        </form>
-        <p>No account? <a href="./register.html">Sign up here</a>.</p>
-    </main>
+        <div class="container">
+            <div class="design">
+                <div class="pill-1 rotate-45"></div>
+                <div class="pill-2 rotate-45"></div>
+                <div class="pill-3 rotate-45"></div>
+                <div class="pill-4 rotate-45"></div>
+            </div>
+            <form id="login">
+        <h1>User Login</h1>
+        <fieldset>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </fieldset>
+        <fieldset>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </fieldset>
+        <div class="login-btn"><input id="loginButton" type="submit" value="Log in"></div>
+        <div id="create">
+            <a href="./register.html">Create your account</a>
+            <i class="ri-arrow-right-fill"></i>
+        </div>
+    </form>
+    </div>
 </body>
+
 </html>

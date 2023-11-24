@@ -105,7 +105,7 @@ document.getElementById('logout').addEventListener('click', async () => {
   
     if (response.status === 200) {
       localStorage.removeItem('token');
-      window.location.assign('./index.html');
+      window.location.assign('./login.html');
     } else {
       alert(data.error);
     }
